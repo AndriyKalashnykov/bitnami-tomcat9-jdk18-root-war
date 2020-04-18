@@ -16,7 +16,11 @@ FROM docker.io/andriykalashnykov/bitnami-tomcat9-jdk18:1.0
 # Tomcat 9.0.34-0 and JDK 11.0.6-0
 # FROM docker.io/bitnami/tomcat:9.0-debian-10
 
-LABEL maintainer "Andriy Kalashnykov <akalashnykov@vmware.com>"
+LABEL Name="bitnami-tomcat9-jdk18-root-war" \
+    Vendor="com.andriykalashnykov" \
+    Maintainer="Andriy Kalashnykov (https://github.com/AndriyKalashnykov/)" \
+    Version="1.0" \
+    License="Apache License, Version 2.0"
 
 EXPOSE 8080
 EXPOSE 8443
