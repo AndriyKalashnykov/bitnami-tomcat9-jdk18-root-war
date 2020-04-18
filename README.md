@@ -7,8 +7,16 @@
 ### Features
 
 * Tomcat 9.0.34
-* JDK 1.8
+* JDK 1.8.242-0
 * WAR deployed as root context "/"
+
+### Base Docker image
+
+* [Customized Bitnami Tomcat 9.0.34 + JDK 1.8.242-0]
+
+### Java Web Application
+
+* [Example Java Web Application (WAR)]
 
 ### Run image locally
 
@@ -24,14 +32,7 @@ $ exit
 docker stop t9
 ```
 
-## Links
-
-[Customized Bitnami Tomcat 9.0.34 + JDK 1.8]:
+[Customized Bitnami Tomcat 9.0.34 + JDK 1.8.242-0]:
 https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
-[Java Web Application example]: https://github.com/AndriyKalashnykov/tomcat-root-war
 
-[Customized Bitnami Tomcat 9.0.34 + JDK 1.8]
-
-[Java Web Application example]
-
-[How to change Tomcat ROOT application?](https://stackoverflow.com/questions/715506/how-to-change-the-root-application)
+[Example Java Web Application (WAR)]: https://github.com/AndriyKalashnykov/tomcat-root-war
