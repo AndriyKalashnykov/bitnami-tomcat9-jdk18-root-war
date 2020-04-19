@@ -14,7 +14,7 @@
   * localhost.crt
   * localhost.key
 * Port 8080 forwards to 8443
-* Port 8443 configured with [HTTP/2] protocol using [Apache APR] via [APR Tomcat Connector]
+* Port 8443 configured with [HTTP/2] protocol over [TLS] 1.2/1.3 using [Apache APR] and [APR Tomcat Connector]
 
 ### Base Docker image
 
@@ -57,3 +57,5 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 [APR Tomcat Connector]: http://tomcat.apache.org/tomcat-9.0-doc/apr.html
 
 [HTTP/2]: https://en.wikipedia.org/wiki/HTTP/2
+
+[TLS]: https://en.wikipedia.org/wiki/Transport_Layer_Security
