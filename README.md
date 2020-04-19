@@ -9,7 +9,7 @@
 * Tomcat 9.0.34
 * JDK 1.8.242-0
 * WAR deployed as root context "/"
-* Custom configuration files from /tomcat/conf override default configuration /opt/bitnami/tomcat/conf
+* Tomcat configuration files from /tomcat/conf override default configuration /opt/bitnami/tomcat/conf
   * [server.xml]
   * [localhost.crt]
   * [localhost.key]
