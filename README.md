@@ -24,6 +24,11 @@
 
 * [Example Java Web Application (WAR)]
 
+
+### Image published on DockerHub
+
+* [bitnami-tomcat9-jdk18-root-war on DockerHub]
+
 ### Run image
 
 ```bash
@@ -66,5 +71,9 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 [8443]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/3606f5c6486d06f3006fdb47c586171a026b2e70/tomcat/conf/server.xml#L71
 
 [server.xml]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/server.xml
+
 [localhost.crt]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.crt
+
 [localhost.key]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.key
+
+[bitnami-tomcat9-jdk18-root-war on DockerHub]: https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18-root-war
