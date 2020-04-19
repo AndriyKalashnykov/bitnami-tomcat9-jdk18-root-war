@@ -10,11 +10,11 @@
 * JDK 1.8.242-0
 * WAR deployed as root context "/"
 * Custom configuration files from /tomcat/conf override default configuration /opt/bitnami/tomcat/conf
-  * server.xml
-  * localhost.crt
-  * localhost.key
-* Port 8080 forwards to 8443
-* Port 8443 configured with [HTTP/2] protocol over [TLS] 1.2/1.3 using [Apache APR] and [APR Tomcat Connector]
+  * [server.xml]
+  * [localhost.crt]
+  * [localhost.key]
+* Port [8080] forwards to [8443]
+* Port [8443] configured with [HTTP/2] protocol over [TLS] 1.2/1.3 using [Apache APR] and [APR Tomcat Connector]
 
 ### Base Docker image
 
@@ -60,3 +60,11 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 [HTTP/2]: https://en.wikipedia.org/wiki/HTTP/2
 
 [TLS]: https://en.wikipedia.org/wiki/Transport_Layer_Security
+
+[8080]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/3606f5c6486d06f3006fdb47c586171a026b2e70/tomcat/conf/server.xml#L69
+
+[8443]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/3606f5c6486d06f3006fdb47c586171a026b2e70/tomcat/conf/server.xml#L71
+
+[server.xml]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/server.xml
+[localhost.crt]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.crt
+[localhost.key]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.key
