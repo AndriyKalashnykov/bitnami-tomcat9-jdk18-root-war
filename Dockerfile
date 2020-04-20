@@ -21,14 +21,14 @@ LABEL Name="bitnami-tomcat9-jdk18-root-war" \
     Version="1.0" \
     License="Apache License, Version 2.0"
 
-COPY --chown=1001:1001 ./tomcat/conf /opt/bitnami/tomcat/conf 
+COPY --chown=1001:1001 ./tomcat/conf /opt/bitnami/tomcat/conf
+
+RUN chown 1001:1001 /opt/bitnami/tomcat/conf
 
 RUN rm -rf /opt/bitnami/tomcat/webapps/ROOT
 RUN rm -rf /opt/bitnami/tomcat/webapps_default/ROOT
 
-COPY --from=build --chown=1001:1001 /tomcat-root-war/target/ROOT.war /
 COPY --from=build --chown=1001:1001 /tomcat-root-war/target/ROOT.war /opt/bitnami/tomcat/webapps
-
 
 EXPOSE 8080
 EXPOSE 8443
