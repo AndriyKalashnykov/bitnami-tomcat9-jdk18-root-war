@@ -10,7 +10,7 @@ RUN mvn dependency:go-offline
 RUN mvn package
 
 # Tomcat 9.0.34-0 and JDK 1.8.242-0
-FROM docker.io/andriykalashnykov/bitnami-tomcat9-jdk18:1.0
+FROM docker.io/andriykalashnykov/bitnami-tomcat9-jdk18:latest
 
 # Tomcat 9.0.34-0 and JDK 11.0.6-0
 # FROM docker.io/bitnami/tomcat:9.0-debian-10
