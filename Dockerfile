@@ -26,7 +26,9 @@ COPY --chown=1001:1001 ./tomcat/conf /opt/bitnami/tomcat/conf
 RUN rm -rf /opt/bitnami/tomcat/webapps/ROOT
 RUN rm -rf /opt/bitnami/tomcat/webapps_default/ROOT
 
+COPY --from=build --chown=1001:1001 /tomcat-root-war/target/ROOT.war /
 COPY --from=build --chown=1001:1001 /tomcat-root-war/target/ROOT.war /opt/bitnami/tomcat/webapps
+
 
 EXPOSE 8080
 EXPOSE 8443
