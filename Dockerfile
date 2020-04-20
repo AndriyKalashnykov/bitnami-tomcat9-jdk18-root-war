@@ -23,7 +23,7 @@ LABEL Name="bitnami-tomcat9-jdk18-root-war" \
 
 COPY --chown=1001:1001 ./tomcat/conf /opt/bitnami/tomcat/conf
 
-RUN chown -R 1001:1001 /opt/bitnami/tomcat/
+RUN chown -R 1001:1001 /opt/bitnami/tomcat/conf
 
 RUN rm -rf /opt/bitnami/tomcat/webapps/ROOT
 RUN rm -rf /opt/bitnami/tomcat/webapps_default/ROOT
