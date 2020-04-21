@@ -28,6 +28,9 @@ RUN rm -rf /opt/bitnami/tomcat/webapps_default/ROOT
 
 COPY --from=build --chown=1001:1001 /tomcat-root-war/target/ROOT.war /opt/bitnami/tomcat/webapps
 
+RUN cp -r /opt/bitnami/tomcat/webapps_default/manager/ /opt/bitnami/tomcat/webapps
+RUN cp -r /opt/bitnami/tomcat/webapps_default/host-manager/ /opt/bitnami/tomcat/webapps
+
 EXPOSE 8080
 EXPOSE 8443
 
