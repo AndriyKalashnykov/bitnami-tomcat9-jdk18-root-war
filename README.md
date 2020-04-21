@@ -16,6 +16,15 @@
 * Port [8080] forwards to [8443]
 * Port [8443] configured with [HTTP/2] protocol over [TLS] 1.2/1.3 using [Apache APR] and [APR Tomcat Connector]
 
+### How it's done
+
+####  Java Web Application (WAR) deployed as Tomcat's root "/" context
+
+* [autoDeploy and deployOnStartUp] attributes of the tag `<Host name="localhost"  appBase="webapps".../>` are set to "false"
+* [/tomcat/conf/server.xml] overwrited default server.xml
+* [ROOT.war] copied to /opt/bitnami/tomcat/webapps
+
+
 ### Base Docker image
 
 * [Customized Bitnami Tomcat 9.0.34 + JDK 1.8.242-0]
@@ -75,5 +84,11 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 [localhost.crt]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.crt
 
 [localhost.key]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/master/tomcat/conf/localhost.key
+
+[autoDeploy and deployOnStartUp]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/tomcat/conf/server.xml#L158
+
+[/tomcat/conf/server.xml]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L24
+
+[ROOT.war]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L29
 
 [bitnami-tomcat9-jdk18-root-war on DockerHub]: https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18-root-war
