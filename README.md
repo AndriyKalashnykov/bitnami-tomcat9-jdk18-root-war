@@ -23,6 +23,7 @@
 * ROOT.war gets [built]
 * [autoDeploy and deployOnStartUp] attributes of the tag `<Host name="localhost"  appBase="webapps".../>` are set to "false"
 * [/tomcat/conf/server.xml] overrides default server.xml
+* defalut ROOT folder gets [deleted]
 * ROOT.war gets [copied] to /opt/bitnami/tomcat/webapps
 
 
@@ -91,6 +92,8 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 [/tomcat/conf/server.xml]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L24
 
 [built]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L5
+
+[deleted]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L26
 
 [copied]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L29
 
