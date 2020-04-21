@@ -21,7 +21,7 @@
 ####  Java Web Application (WAR) deployed as Tomcat's root "/" context
 
 * [autoDeploy and deployOnStartUp] attributes of the tag `<Host name="localhost"  appBase="webapps".../>` are set to "false"
-* [/tomcat/conf/server.xml] overwrited default server.xml
+* [/tomcat/conf/server.xml] overrides default server.xml
 * [ROOT.war] copied to /opt/bitnami/tomcat/webapps
 
 
