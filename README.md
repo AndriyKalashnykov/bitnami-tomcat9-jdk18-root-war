@@ -20,9 +20,10 @@
 
 ####  Java Web Application (WAR) deployed as Tomcat's root "/" context
 
+* ROOT.war gets [built]
 * [autoDeploy and deployOnStartUp] attributes of the tag `<Host name="localhost"  appBase="webapps".../>` are set to "false"
 * [/tomcat/conf/server.xml] overrides default server.xml
-* [ROOT.war] copied to /opt/bitnami/tomcat/webapps
+* ROOT.war gets [copied] to /opt/bitnami/tomcat/webapps
 
 
 ### Base Docker image
@@ -89,6 +90,8 @@ https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
 
 [/tomcat/conf/server.xml]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L24
 
-[ROOT.war]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L29
+[built]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L5
+
+[copied]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/165246dba8f0e51ece6d3557368b168339312817/Dockerfile#L29
 
 [bitnami-tomcat9-jdk18-root-war on DockerHub]: https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18-root-war
