@@ -36,7 +36,7 @@
 * [Example Java Web Application (WAR)]
 
 
-### bitnami-tomcat9-jdk18-root-war published on DockerHub
+### bitnami-tomcat9-jdk18-root-war on DockerHub
 
 * [bitnami-tomcat9-jdk18-root-war on DockerHub]
 
