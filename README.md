@@ -20,7 +20,7 @@
 
 ####  Java Web Application (WAR) deployed as Tomcat's root "/" context
 
-* ROOT.war gets [built]
+* [ROOT.war](https://github.com/AndriyKalashnykov/tomcat-root-war) gets [built]
 * [autoDeploy and deployOnStartUp] attributes of the tag `<Host name="localhost"  appBase="webapps".../>` are set to "false"
 * [/tomcat/conf/server.xml] overrides default server.xml
 * defalut ROOT folder gets [deleted]
