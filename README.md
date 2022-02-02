@@ -1,4 +1,4 @@
-[![Docker Image CI](https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/actions/workflows/docker-image.yml/badge.svg)](https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/actions/workflows/docker-image.yml)
 [![Build Status](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war.svg?branch=master)](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war)
 [![Docker Pulls](https://img.shields.io/docker/pulls/andriykalashnykov/bitnami-tomcat9-jdk18-root-war.svg)](https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18-root-war/)
 [![License](https://img.shields.io/hexpm/l/plug.svg?maxAge=2592000)](https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18-root-war/blob/176c7973603a57c726f111a25eac57832ee1c2a9/LICENSE)
