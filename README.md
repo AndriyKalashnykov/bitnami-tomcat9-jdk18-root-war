@@ -6,6 +6,10 @@
 
 # Java Web Application (WAR) deployed as root "/" context onto Customized Bitnami Tomcat 9
 
+### Pre-requisites
+
+* [Docker](https://docs.docker.com/engine/install/)
+
 ### Features
 
 * Tomcat 9.0.34
